@@ -16,7 +16,7 @@ export const CONFIG = {
   },
   // Para cambiar una foto: reemplaza el archivo en assets/img/ con el mismo nombre.
   imagenes: {
-    portada: "assets/img/portada.jpg",
+    portada: "assets/img/portada.png" // PNG sin fondo (ya incluye el gorrito),
     outfit1: "assets/img/outfit-1.jpg",
     outfit2: "assets/img/outfit-2.jpg",
     musica: "" // opcional: "assets/musica.mp3"

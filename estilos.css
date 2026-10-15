@@ -40,8 +40,9 @@ section{position:relative}
 .gs1{left:1%;top:48%;width:14%;transform:rotate(-10deg)}.gs2{left:8%;top:56%;width:19%;transform:rotate(8deg)}
 .gs3{left:5%;top:72%;width:19%;transform:rotate(-6deg)}.gs4{left:36%;top:47%;width:15%;transform:rotate(12deg)}
 .globo{left:25%;top:57%;width:23%;transform:rotate(-6deg);filter:drop-shadow(0 6px 6px rgba(120,60,90,.3))}
-.foto-portada{position:absolute;right:9%;bottom:11%;width:40%;background:#fff;padding:2.2% 2.2% 2.2%;border-radius:50% 50% 8% 8%/22% 22% 4% 4%;transform:rotate(3deg);box-shadow:0 8px 16px rgba(60,20,80,.35);overflow:hidden}
-.foto-portada img{width:100%;height:100%;object-fit:cover;border-radius:inherit}
+.foto-portada{position:absolute;right:4%;bottom:7%;width:44%;transform:rotate(2deg);filter:drop-shadow(0 0 0 #fff) drop-shadow(3px 0 0 #fff) drop-shadow(-3px 0 0 #fff) drop-shadow(0 3px 0 #fff) drop-shadow(0 -3px 0 #fff) drop-shadow(0 8px 10px rgba(60,20,80,.35))}
+.foto-portada img{width:100%;height:auto}
+.foto-portada.sin-img{aspect-ratio:3/5}
 .ph{position:absolute;inset:0;display:none;align-items:center;justify-content:center;text-align:center;font:400 .8rem var(--sans);color:var(--gris);background:repeating-linear-gradient(45deg,#f0e9f5 0 10px,#e8dff0 10px 20px);padding:1rem}
 .sin-img .ph{display:flex}.sin-img img{display:none}
 /* ---- dresscode ---- */
@@ -99,27 +100,8 @@ input[type=text],#nombre,#total{width:100%;font:400 1rem var(--sans);color:var(-
 .polaroid.reveal{transition:opacity .8s}
 .p1.reveal:not(.vis){transform:rotate(-8deg) translateY(18px)}.p2.reveal:not(.vis){transform:rotate(7deg) translateY(18px)}
 .p1.vis{transform:rotate(-8deg)}.p2.vis{transform:rotate(7deg)}
-.foto-portada.reveal:not(.vis){transform:rotate(3deg) translateY(18px)}.foto-portada.vis{transform:rotate(3deg)}
+.foto-portada.reveal:not(.vis){transform:rotate(2deg) translateY(18px)}.foto-portada.vis{transform:rotate(2deg)}
 .float{animation:flota 6s ease-in-out infinite}
 .globo.float{animation-name:flotaG}
-.foto-portada {
-  position: absolute;
-  right: 8%;
-  bottom: 8%;
-  width: 55%; /* Aumenta este valor si la quieres más grande */
-  background: transparent;
-  padding: 0;
-  border-radius: 0;
-  transform: rotate(3deg);
-  box-shadow: none;
-  overflow: visible;
-  z-index: 5;
-}
-
-.foto-portada img {
-  width: 100%;
-  height: auto;
-  object-fit: contain;
-  border-radius: 0;
-  background: transparent;
-}ation:none!important;transition:none!important}.reveal{opacity:1;transform:none}.p1.reveal,.p2.reveal{transform:revert}}
+@keyframes flota{50%{translate:0 -6px}}@keyframes flotaG{50%{translate:0 -10px}}
+@media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}.reveal{opacity:1;transform:none}.p1.reveal,.p2.reveal{transform:revert}}

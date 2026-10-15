@@ -21,7 +21,7 @@ firebase deploy
 Panel: `https://TU-PROYECTO.web.app/admin` (la seguridad la dan Auth + reglas, no la URL). GitHub Pages sirve el sitio, pero por sí solo no protege nada: las reglas viven en Firebase.
 
 ## 4. Personalizar
-Textos, fecha, dirección, dress code → `config.js`. Fotos → reemplaza los archivos de `assets/img/` (portada.jpg, outfit-1.jpg, outfit-2.jpg). Música opcional: pon el mp3 y su ruta en `config.js`.
+Textos, fecha, dirección, dress code → `config.js`. Fotos → reemplaza los archivos de `assets/img/` (portada.png, outfit-1.jpg, outfit-2.jpg). Música opcional: pon el mp3 y su ruta en `config.js`.
 
 ## 5. Probar
 - Abre la invitación, confirma: debe aparecer en Firestore > rsvps y en /admin.
