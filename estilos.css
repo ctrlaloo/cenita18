@@ -102,5 +102,33 @@ input[type=text],#nombre,#total{width:100%;font:400 1rem var(--sans);color:var(-
 .foto-portada.reveal:not(.vis){transform:rotate(3deg) translateY(18px)}.foto-portada.vis{transform:rotate(3deg)}
 .float{animation:flota 6s ease-in-out infinite}
 .globo.float{animation-name:flotaG}
+/* Forzar que la foto se mueva a la esquina inferior derecha y sin marco */
+section.portada .foto-portada {
+  position: absolute !important;
+  right: 2px !important;
+  bottom: 2px !important;
+  left: auto !important;
+  top: auto !important;
+  width: 45% !important;
+  background: transparent !important;
+  background-color: transparent !important;
+  border: none !important;
+  border-radius: 0 !important;
+  box-shadow: none !important;
+  padding: 0 !important;
+  margin: 0 !important;
+  overflow: visible !important;
+  transform: none !important;
+  z-index: 99 !important;
+}
+
+section.portada .foto-portada img {
+  width: 100% !important;
+  height: auto !important;
+  display: block !important;
+  background: transparent !important;
+  object-fit: contain !important;
+  border-radius: 0 !important;
+}
 @keyframes flota{50%{translate:0 -6px}}@keyframes flotaG{50%{translate:0 -10px}}
 @media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}.reveal{opacity:1;transform:none}.p1.reveal,.p2.reveal{transform:revert}}
