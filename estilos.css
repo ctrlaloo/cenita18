@@ -102,32 +102,24 @@ input[type=text],#nombre,#total{width:100%;font:400 1rem var(--sans);color:var(-
 .foto-portada.reveal:not(.vis){transform:rotate(3deg) translateY(18px)}.foto-portada.vis{transform:rotate(3deg)}
 .float{animation:flota 6s ease-in-out infinite}
 .globo.float{animation-name:flotaG}
-/* Deja la foto limpia en la esquina inferior derecha sin ningún marco */
-section.portada .foto-portada {
-  position: absolute !important;
-  right: 6% !important;
-  bottom: 8% !important;
-  width: 44% !important;
-  background: transparent !important;
-  background-color: transparent !important;
-  border: none !important;
-  border-radius: 0 !important;
-  box-shadow: none !important;
-  padding: 0 !important;
-  margin: 0 !important;
-  overflow: visible !important;
-  transform: rotate(3deg) !important;
-  z-index: 10 !important;
+.foto-portada {
+  position: absolute;
+  right: 8%;
+  bottom: 8%;
+  width: 55%; /* Aumenta este valor si la quieres más grande */
+  background: transparent;
+  padding: 0;
+  border-radius: 0;
+  transform: rotate(3deg);
+  box-shadow: none;
+  overflow: visible;
+  z-index: 5;
 }
 
-section.portada .foto-portada img {
-  width: 100% !important;
-  height: auto !important;
-  display: block !important;
-  background: transparent !important;
-  object-fit: contain !important;
-  border-radius: 0 !important;
-  box-shadow: none !important;
-}
-@keyframes flota{50%{translate:0 -6px}}@keyframes flotaG{50%{translate:0 -10px}}
-@media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}.reveal{opacity:1;transform:none}.p1.reveal,.p2.reveal{transform:revert}}
+.foto-portada img {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+  border-radius: 0;
+  background: transparent;
+}ation:none!important;transition:none!important}.reveal{opacity:1;transform:none}.p1.reveal,.p2.reveal{transform:revert}}
